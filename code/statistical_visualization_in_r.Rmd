@@ -134,4 +134,36 @@ p3 <- g2 + theme_tufte()
 p4 <- g2 + theme_wsj()
 grid.arrange(p1, p2, p3, p4, nrow=2, ncol=2)
 ```
+```{r}
+data(mtcars)
+head(mtcars)
+summary(mtcars)
+hist(mtcars$hp)
+
+
+
+##histgg <- ggplot(mtcars,aes(x=mpg)) + geom_histogram(binwidth=5)
+gd <- ggplot( mtcars) + geom_histogram(aes(x=mpg))
+gd1 <- ggplot( mtcars) + geom_histogram(aes(x=mpg))
+```
+
+
+```{r}
+gd5 <- ggplot(mtcars,aes(y=cyl,x=wt)) + geom_violin()
+gd5
+
+```
+
+
+```{r}
+gd4 <- ggplot(mtcars,aes(y=mpg,x=cyl)) + geom_point()
+gd4
+```
+
+
+```{r}
+gd6 <- ggplot(mtcars,aes(x=wt, y=mpg, size=cyl)) + geom_point() 
+gd6
+
+```
 
