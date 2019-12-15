@@ -8,8 +8,12 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+```{r}
+
+```
 
 ## apply - row sum
+
 
 ```{r cars}
 theMatrix <- matrix(1:9, nrow=3)
